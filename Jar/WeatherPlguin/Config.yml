@@ -1,0 +1,6 @@
+# https://geoapi./city/lookupqweather.com/v2?key=4fd5b28a9a27428e92dd14cada996806&location=%E7%9F%B3%E5%AE%B6%E5%BA%84&number=5
+# https://geoapi./city/lookupqweather.com/v2?Key=4fd5b28a9a27428e92dd14cada996806&location=%E7%9F%B3%E5%AE%B6%E5%BA%84
+# 请注册和风天气 获取ID key
+ID: HE2208081753111840
+KEY: 4fd5b28a9a27428e92dd14cada996806
+AttentionLocation: ['石家庄','保定']

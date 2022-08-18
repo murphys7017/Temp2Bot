@@ -1,0 +1,7 @@
+{
+    "PluginName":"ChatPlugin",
+    "PluginID":"1",
+    "WS_url":"ws://localhost:8888/Polaris/WebSocketServer/",
+    "start":["start"],
+    "close":["close"]
+}

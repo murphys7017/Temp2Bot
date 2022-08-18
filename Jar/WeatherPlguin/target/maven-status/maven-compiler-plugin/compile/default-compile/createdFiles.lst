@@ -1,0 +1,10 @@
+xyz\polaris\plugin\GZIPUtil.class
+xyz\polaris\plugin\pojo\City.class
+xyz\polaris\plugin\HttpUtil.class
+xyz\polaris\plugin\WeatherService.class
+xyz\polaris\plugin\ApiEnum.class
+xyz\polaris\plugin\GetWeather.class
+xyz\polaris\plugin\pojo\RealTimeWeather.class
+META-INF\extensions.idx
+xyz\polaris\plugin\pojo\WeatherWarining.class
+xyz\polaris\plugin\pojo\DailyWeather.class

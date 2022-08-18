@@ -1,0 +1,6 @@
+{
+    "PluginName":"PythonExample",
+    "PluginID":"-1",
+    "WS_url":"ws://localhost:8888/Polaris/WebSocketServer/",
+    "PythonExample":["PythonExample"]
+}

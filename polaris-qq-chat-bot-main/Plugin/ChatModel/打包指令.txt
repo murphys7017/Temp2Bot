@@ -1,0 +1,1 @@
+pyinstaller -F GETConn.py --additional-hooks-dir=.

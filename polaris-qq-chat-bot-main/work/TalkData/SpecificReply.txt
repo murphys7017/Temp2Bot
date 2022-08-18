@@ -1,0 +1,45 @@
+[你是谁?]->我是由yuki和murphy一起创造的简易聊天机器人，你可以叫我Polaris
+[你是谁]->我是由yuki和murphy一起创造的简易聊天机器人，你可以叫我Polaris
+[我回来了]->欢迎回来，现在控制权转交给铁御
+[在吗]->我当然在呀~
+[你好][你好啊]->你好呀~我是Polaris~||你好，我是Polaris，很高兴认识你||你好吖
+[谢谢]->不用谢啦~客气啥呀~
+[爱你]->我也爱你~
+[爪巴]->东方不亮西方亮，憨批啥样你啥样
+[早]->早什么早，早上要说我爱你
+[草]->草
+[富婆，饿饿，软饭]->爪巴
+[亲亲亲]->啵啵啵
+[可恶呢]->可恶呢
+[mua]->mua～
+[晚安]->晚安啦~早点睡呀~
+[sb]->你才是!
+[傻子]->我可能是真的傻，但是你也就能和我比比了
+[你又出什么bug了]->程序的事怎么能叫bug，这叫…这叫设想外的运行方式
+[涩涩][瑟瑟][色色][色图!][色图]->一天不色色癫痫发作作是吧，给爷爬
+[apex？]->无，爬
+
+# 本地文件
+# 	图片
+[随机图片发送测试]->[work\usingFile\ghs][random]
+[随机图片撤回发送测试]->[work\usingFile\ghs][random][recall]
+[随机闪照发送测试]->[work\usingFile\ghs][random][IsFlashImage]
+[指定图片发送测试]->[work\usingFile\ghs][maomi_b6f04280c6198c34ff4918d86f81e00d.jpg]
+# 	音频
+[随机音频发送测试]->[work\usingFile\voice][random]
+[指定音频发送测试]->[work\usingFile\voice][醉猫2.mp3]
+
+
+
+#api
+#文本
+[api测试-文本]->[GET][txt][https://api.ixiaowai.cn/ylapi/index.php]
+
+#带正则提取的
+[api测试-文本-正则]->[GET][txt][https://api.ixiaowai.cn/ylapi/index.php][\b[a-z]{3}\b]
+
+#图片	api返回一张图
+[api测试-图片]->[GET][image][https://api.ixiaowai.cn/api/api.php]
+
+
+[setu]->pid&&uid&&title&&[GET][json][https://gurepu.lolicon.run/api/pixiv/setu.php][pid*txt&uid*txt&title*txt&url*image]

@@ -1,0 +1,59 @@
+# QQ相关配置
+# 不可空值
+# 账号
+QQ: 2762018040
+# 密码
+Password: 0.0WenShiYue
+# 对那些群生效
+ApplyGroups: [817581299,494799293,729445824,817581299]
+# 可以通过那个qq进行管理 部分可用还没写完
+Admin: 815049548
+# 登录协议 ANDROID_PHONE | ANDROID_PAD | ANDROID_WATCH
+Protocol: ANDROID_PHONE
+# bot的名字
+Name: polaris
+BotImage: http://r.photo.store.qq.com/psc?/V548iLWq2KMuag360X0I36WOzl23axIA/bqQfVz5yrrGYSXMvKr.cqUDXdbgMNCwiFsnjw9R4T4fXUjsjG*C3HvdCdcYJaI8JSH1LujhckFTKRNyM8w4gckj7rcv3BOzyhAYYQvzUh3Y!/r
+# bot的介绍
+Introduction: Alice介绍
+# 工作路径
+Workspace: work
+# 缓存路径
+CacheDir: cache
+# 聊天功能的websocket端口
+WebSocketPort: 8700
+# 多少秒撤回 建议10s以上 图片上传需要时间
+RecallIn: 10
+
+#是否启用敏感词封禁 0 撤回  n 大于0 封禁n秒   n<0 撤回加封禁n秒
+SensitiveWordsBanned: 5
+# ban禁词
+BanWordFilePath: work\TalkData\BanWords.txt
+# 固定回复路径
+SpecificReplyFilePath: work\TalkData\SpecificReply.txt
+
+# Selenium驱动路径
+SeleniumDriverPath: C:\Program Files (x86)\Microsoft\Edge\Application\msedgedriver.exe
+# Selenium驱动名称 谷歌:webdriver.chrome.driver ,edge:webdriver.edge.driver 其他浏览器自己百度吧
+SeleniumDriverName: webdriver.edge.driver
+# 发言频率 单位为毫秒
+FrequencyOfSpeeches: 500
+# 一些回复
+# 所有的回复支持命令 参考 你还戳,有病吧你||雅斯雷  [F:\IDEA\QQBot-Mirai\work\usingFile\ghs][random]
+# 被解除禁言时
+UnmuteSay: 哈哈哈,我可以说话了
+# 群成员加入时
+MemberJoinSay: 欢迎加入&&[work/usingFile/][icoser.net (03).jpg]&&poweredBy-石家庄铁道大学软件开发协会-
+# 群成员离开时
+MemberLeaveSay: 走了呜呜呜
+# 对被封禁的人说
+ToBannedNumberSay: 你违规了
+ToUnableBannedNumberSay: 我现在ban不了你,但是你给我等着
+# 戳一戳响应
+ToNudgeSay: [ '别戳了','你还戳,有病吧你||雅斯雷','[work\usingFile\ghs][random]' ]
+# 当被叫到时
+WhenCalled: 怎么了?&&[work\usingFile\ghs][random]
+
+JarPlugin:
+  - id: weather-plugin
+    version: 1.0.0
+    path: E:\Code\Polaris\Jar\WeatherPlguin\target\WeatherPlguin-1.0.0.jar

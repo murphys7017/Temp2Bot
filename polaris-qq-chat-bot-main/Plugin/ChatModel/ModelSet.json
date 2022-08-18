@@ -1,0 +1,15 @@
+{
+	"ReplyFrequency": 3,
+	
+	"model_path":"data/model/model_epoch40_50w",
+	"vocab_path":"data/voc/vocab.txt",
+
+	"no_cuda":0,
+	"CUDA_VISIBLE_DEVICES":"0",
+	"repetition_penalty":1.0,
+	"topk":8,
+	"topp":0,
+	"max_len":20,
+	"max_history_len":40,
+	"temperature":1
+}

@@ -1,0 +1,9 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /Polaris
+spring:
+  datasource:
+    url: jdbc:sqlite:work\Database\Polaris.db
+    driver-class-name: org.sqlite.JDBC
+

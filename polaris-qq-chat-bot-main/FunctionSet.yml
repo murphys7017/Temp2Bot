@@ -1,0 +1,52 @@
+# 百度翻译api api有变动 待修改TODO
+BaiduTranslate:
+  IsUsing: true
+  BaiduTranslateAPPID: 20210402000759494
+  BaiduTranslateKey: HtgGCVnZVKoeOFTvoYz6
+  CommandSet: ['T&', 't&', 't-', 'T-']
+
+# 音乐分享 暂时只支持网易云
+MusicShare:
+  IsUsing: true
+  # 是否@触发
+  IfNeedAt: false
+  # 歌单链接
+  Playlist: https://y.music.163.com/m/playlist?id=826019094&userid=551118830&creatorId=551118830
+  ChangePlaylist: 更新歌单
+  # 更新歌单需要扫码登录网易云
+  CommandSet: ['音乐','来首歌']
+# 使用百度搜图功能 待修改TODO
+BaiduImageSearch:
+  IsUsing: true
+  IfNeedAt: false
+  ResponseList: [ "搜图","搜一下这个图" ]
+  StartCommand: 'Start BaiduImageSearch'
+  CloseCommand: 'Close BaiduImageSearch'
+
+SignIn:
+  IsUsing: true
+  IfNeedAt: false
+  SignIn: 'Polaris我要签到'
+  # 对签到的人说 xxx是第几个签到的+ToSignInSay
+  ToSignInSay: '嘿嘿嘿'
+  # 查看自己是否签到
+  SignInInfo: '历史记录'
+
+# 页面抓取[实验功能,不保证稳定性]
+BrowserCrawling:
+  IsUsing: true
+  IfNeedAt: false
+  UrlList: ['https://www.csdn.net/']
+  XpathList: ['//*[@id="floor-www-index_558"]/div/div[3]/div[1]/div[2]/div[1]']
+  TriggerWordList: ['页面抓取测试']
+
+# 定时提醒功能
+# 发送时间+CommandSet+提醒什么
+# 到时候会@或者发送消息
+# 如果是当天直接 [n点n分|n点|n|n:n|n.n|n n] n为数字
+# 当月[dd-[n点n分|n点|n|n:n|n.n|n n]|dd[日|号][n点n分|n点|n|n:n|n.n|n n]]
+RemindMe:
+  IsUsing: true
+  IfNeedAt: false
+  OkSay: 好的我知道了
+  CommandSet: [ '提醒我','叫我' ]

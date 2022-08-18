@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="heweather-java-sdk-v7-1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/xyz/polaris/plugin/heweather-java-sdk-v7-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
