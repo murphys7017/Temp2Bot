@@ -13,7 +13,6 @@ import polaris.core.init.LoadConfig;
 import polaris.core.service.impl.BaseFunction;
 import polaris.core.utils.MessageSender;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,7 +23,7 @@ public class DebugTools implements Function {
     Logger logger = LoggerFactory.getLogger("TEST USE LOG");
     @Override
     public List<String> getFunctionKeys() {
-        return Arrays.asList(new String[]{"show function command set","show ban set","老婆在吗","reload bot set"});
+        return Arrays.asList("show function command set","show ban set","老婆在吗","reload bot set","restart bot");
     }
 
     @Override
@@ -35,14 +34,16 @@ public class DebugTools implements Function {
             if (msg.startsWith(" ")){
                 msg = msg.substring(1);
             }
-            if (msg.equals("show function command set")){
+            if ("show function command set".equals(msg)){
                 event.getSender().sendMessage(RUN_VARIABLE.FUNCTIONS_SET.toString());
-            }else if (msg.equals("show ban set")){
+            }else if ("show ban set".equals(msg)){
                 event.getSender().sendMessage(RUN_VARIABLE.BAN_WORD.toString());
-            } else if (msg.equals("老婆在吗")){
+            } else if ("老婆在吗".equals(msg)){
                 MessageSender.toSend(event.getSubject(),"在的呢,怎么了吖&&[work/usingFile/][1.gif]");
-            }else if (msg.equals("reload bot set")){
-                LoadConfig.loadAll();
+            }else if ("reload bot set".equals(msg)){
+                LoadConfig.loadAllConfig();
+            }else if ("restart bot".equals(msg)){
+                LoadConfig.loadAndLogin();
             }
 
         }

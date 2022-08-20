@@ -26,5 +26,6 @@ public class LoadPlugin {
                 RUN_VARIABLE.PLUGINS_MAP.put(functionKey,plugin);
             }
         }
+        RUN_VARIABLE.PLUGINS_MANAGER = pluginManager;
     }
 }

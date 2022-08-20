@@ -19,8 +19,9 @@ import java.util.List;
  */
 @Extension
 public class GetWeather implements MessageEventHandlerInterface {
-    private Bot bot;
-    private WeatherService weatherService;
+    public static Bot bot = null;
+    public static WeatherService weatherService;
+    private Boolean isFirst = true;
 
 
 
@@ -42,6 +43,10 @@ public class GetWeather implements MessageEventHandlerInterface {
     @Override
     public Boolean getResponse(MessageEvent messageEvent) {
         bot = messageEvent.getBot();
+        if (isFirst){
+            WeatherReminder weatherReminder = new WeatherReminder();
+            isFirst = false;
+        }
         String msg = messageEvent.getMessage().get(PlainText.Key).contentToString();
         String location = msg.split("天气")[0];
         try {

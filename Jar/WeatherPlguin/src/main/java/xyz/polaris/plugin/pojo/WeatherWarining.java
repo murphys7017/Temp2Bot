@@ -1,8 +1,15 @@
 package xyz.polaris.plugin.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * @author polaris
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class WeatherWarining {
     // 当前数据的响应式页面，便于嵌入网站或应用
     private String fxLink;

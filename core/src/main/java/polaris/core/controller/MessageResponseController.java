@@ -41,75 +41,73 @@ public class MessageResponseController {
     public static ConcurrentLinkedQueue<MessageEvent> MessageQueue = new ConcurrentLinkedQueue<>();
 
 
-    @Scheduled(fixedRate = 100)
+    // 500ms查看一次消息队列
+    @Scheduled(fixedRate = 500)
     private void responseMessage() {
-        for (int i = 0; i <MessageQueue.size();i++){
-            // 是否发送消息标志
-            boolean isSend = false;
-            // 取出最新的消息事件
-            MessageEvent messageEvent = MessageQueue.poll();
-            // 消息对应的bot
-            Bot bot = messageEvent.getBot();
+        if (!RUN_VARIABLE.RESPONSINGS){
+            RUN_VARIABLE.RESPONSINGS = true;
+            for (int i = 0; i <MessageQueue.size();i++){
+                // 是否发送消息标志
+                boolean isSend = false;
+                // 取出最新的消息事件
+                MessageEvent messageEvent = MessageQueue.poll();
+                // 消息对应的bot
+                Bot bot = messageEvent.getBot();
 
-            // ban检查
-            if (!baseFunction.banWorkCheck(messageEvent)){
-                // 非ban
-                String msg = messageEvent.getMessage().get(PlainText.Key).contentToString();
-                if (msg.startsWith(" ")){
-                    msg = msg.substring(1);
-                }
+                // ban检查
+                if (!baseFunction.banWorkCheck(messageEvent)){
+                    // 非ban
+                    String msg = messageEvent.getMessage().get(PlainText.Key).contentToString();
+                    if (msg.startsWith(" ")){
+                        msg = msg.substring(1);
+                    }
 
-                // 比对内部方法的key 如果发送消息 打破循环
-                for (String key :FunctionLoader.getInternalFunctionsMap().keySet()){
-                    if (msg.contains(key) || msg.equals(key)) {
-                        Function function = FunctionLoader.getInternalService(key);
-                        isSend = function.getResponse(messageEvent);
-                        if (isSend) {
-                            break;
+                    // 比对内部方法的key 如果发送消息 打破循环
+                    for (String key :FunctionLoader.getInternalFunctionsMap().keySet()){
+                        if (msg.contains(key) || msg.equals(key)) {
+                            Function function = FunctionLoader.getInternalService(key);
+                            isSend = function.getResponse(messageEvent);
+                            if (isSend) {
+                                break;
+                            }
+
                         }
-
                     }
-                }
-                for (String key : RUN_VARIABLE.PLUGINS_MAP.keySet()) {
-                    if (msg.contains(key)) {
-                        MessageEventHandlerInterface function =RUN_VARIABLE.PLUGINS_MAP.get(key);
-                        isSend = function.getResponse(messageEvent);
-                        if (isSend) {
-                            break;
+                    for (String key : RUN_VARIABLE.PLUGINS_MAP.keySet()) {
+                        if (msg.contains(key)) {
+                            MessageEventHandlerInterface function =RUN_VARIABLE.PLUGINS_MAP.get(key);
+                            isSend = function.getResponse(messageEvent);
+                            if (isSend) {
+                                break;
+                            }
+
                         }
-
                     }
-                }
 
-                // websocket plugins
+                    // websocket plugins
 
 
-                // 如果内部外部websocket都没有响应 使用固定回复
-                if (!isSend) {
-                    String response = RUN_VARIABLE.SPECIFIC_REPLY.get(msg);
-                    if (response != null) {
-                        MessageSender.toSend(messageEvent.getSubject(),response);
-                        isSend = true;
+                    // 如果内部外部websocket都没有响应 使用固定回复
+                    if (!isSend) {
+                        String response = RUN_VARIABLE.SPECIFIC_REPLY.get(msg);
+                        if (response != null) {
+                            MessageSender.toSend(messageEvent.getSubject(),response);
+                            isSend = true;
+                        }
                     }
-                }
-                // 如果固定回复没有 使用音乐分享
-//                if (!isSend) {
-//                    for (String s : RUN_VARIABLE.MUSIC_LIST.keySet()) {
-//                        if (msg.contains(s)){
-//                            messageEvent.getSubject().sendMessage(MiraiCode.deserializeMiraiCode(RUN_VARIABLE.MUSIC_LIST.get(s)));
-//                        }
-//                    }
-//                }
 
-                if (!isSend){
-                    if (msg.equals(BOT_SET.Name)){
-                        MessageSender.toSend(messageEvent.getSubject(),BOT_SET.WhenCalled);
+                    if (!isSend){
+                        if (msg.equals(BOT_SET.Name)){
+                            MessageSender.toSend(messageEvent.getSubject(),BOT_SET.WhenCalled);
+                        }
                     }
-                }
 
+
+                }
 
             }
 
+            RUN_VARIABLE.RESPONSINGS = false;
         }
 
     }

@@ -31,9 +31,9 @@ public class YmlTest {
         BOT_SET.WebSocketPort = Integer.parseInt(botSet.get("WebSocketPort").toString());
         BOT_SET.RecallIn = Integer.parseInt(botSet.get("RecallIn").toString());
         BOT_SET.SensitiveWordsBanned = Integer.parseInt(botSet.get("SensitiveWordsBanned").toString());
-        BOT_SET.BanWordFilePath = botSet.get("BanWordFilePath").toString();
-        BOT_SET.SpecificReplyFilePath = botSet.get("SpecificReplyFilePath").toString();
-        BOT_SET.PluginFolder = botSet.get("PluginFolder").toString();
+
+
+
         BOT_SET.SeleniumDriverPath = botSet.get("SeleniumDriverPath").toString();
         BOT_SET.SeleniumDriverName = botSet.get("SeleniumDriverName").toString();
         BOT_SET.UnmuteSay = botSet.get("UnmuteSay").toString();

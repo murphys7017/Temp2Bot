@@ -2,6 +2,7 @@ package polaris.core.init;
 
 import net.mamoe.mirai.BotFactory;
 import net.mamoe.mirai.event.ListenerHost;
+import net.mamoe.mirai.message.data.Audio;
 import net.mamoe.mirai.utils.BotConfiguration;
 import polaris.core.BOT_SET;
 import polaris.core.RUN_VARIABLE;
@@ -32,8 +33,8 @@ public class LoginBot {
                     setLoginCacheEnabled(true);
                 }
             });
-            RUN_VARIABLE.BOT.login();
 
+            RUN_VARIABLE.BOT.login();
 
             for (String s : new String[]{"NudgeEventHandler", "MessageEventHandler", "MemberSpecialTitleChangeEventHandler", "MemberPermissionChangeEventHandler", "FriendInputStatusChangedEventHandler", "MemberMuteEventHandler","MemberUnmuteEventHandler","MemberJoinEventHandler","NudgeEventHandler","MemberLeaveEventHandler"}) {
                 try {

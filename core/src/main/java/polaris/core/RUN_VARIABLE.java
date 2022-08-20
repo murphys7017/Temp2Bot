@@ -32,4 +32,8 @@ public class RUN_VARIABLE {
 
     public static Map<String, MessageEventHandlerInterface> PLUGINS_MAP = new HashMap<>();
 
+    public static Boolean RESPONSINGS = false;
+
+    public static PluginManager PLUGINS_MANAGER;
+
 }

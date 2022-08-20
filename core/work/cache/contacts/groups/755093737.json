@@ -1,5 +1,5 @@
 {
-    "troopMemberNumSeq": 351,
+    "troopMemberNumSeq": 352,
     "list": [
         {
             "uin": 7588121,
@@ -219,7 +219,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1646797832,
-            "lastSpeakTimestamp": 1660831416,
+            "lastSpeakTimestamp": 1660868657,
             "isOfficialBot": false
         },
         {
@@ -713,7 +713,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1655913498,
-            "lastSpeakTimestamp": 1660754364,
+            "lastSpeakTimestamp": 1660869532,
             "isOfficialBot": false
         },
         {
@@ -1354,19 +1354,6 @@
             "isOfficialBot": false
         },
         {
-            "uin": 2281683532,
-            "nick": "逢某人",
-            "permission": "MEMBER",
-            "remark": "逢某人",
-            "nameCard": "",
-            "specialTitle": "",
-            "muteTimestamp": 0,
-            "anonymousId": null,
-            "joinTimestamp": 1655906885,
-            "lastSpeakTimestamp": 1655906885,
-            "isOfficialBot": false
-        },
-        {
             "uin": 2298525077,
             "nick": "无人",
             "permission": "MEMBER",
@@ -1602,7 +1589,7 @@
         },
         {
             "uin": 2735004678,
-            "nick": "樱奈sakula",
+            "nick": "樱奈奈",
             "permission": "MEMBER",
             "remark": "樱奈sakula",
             "nameCard": "",
@@ -2026,7 +2013,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1656229233,
-            "lastSpeakTimestamp": 1660833760,
+            "lastSpeakTimestamp": 1660880700,
             "isOfficialBot": false
         },
         {
@@ -2117,7 +2104,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1646813790,
-            "lastSpeakTimestamp": 1660800185,
+            "lastSpeakTimestamp": 1660880564,
             "isOfficialBot": false
         },
         {

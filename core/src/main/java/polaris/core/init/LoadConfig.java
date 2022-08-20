@@ -17,14 +17,17 @@ import java.util.Map;
  * @author polaris.
  */
 public class LoadConfig {
-    public static void loadAll(){
+    public static void loadAndLogin(){
+        loadAllConfig();
+        LoginBot.defaultLogin();
+        LoadPlugin.loadJar();
+    }
+    public static void loadAllConfig(){
         loadBanWords();
         loadCityCode();
         loadMusicList();
         loadSpecificReply();
         loadBotSet();
-        LoginBot.defaultLogin();
-        LoadPlugin.loadJar();
     }
     public static void loadBotSet(){
         Yaml yml = new Yaml();
@@ -49,8 +52,6 @@ public class LoadConfig {
         BOT_SET.WebSocketPort = Integer.parseInt(botSet.get("WebSocketPort").toString());
         BOT_SET.RecallIn = Integer.parseInt(botSet.get("RecallIn").toString());
         BOT_SET.SensitiveWordsBanned = Integer.parseInt(botSet.get("SensitiveWordsBanned").toString());
-        BOT_SET.BanWordFilePath = botSet.get("BanWordFilePath").toString();
-        BOT_SET.SpecificReplyFilePath = botSet.get("SpecificReplyFilePath").toString();
         BOT_SET.JarPlugin = (List<Map<String, String>>) botSet.get("JarPlugin");
         BOT_SET.SeleniumDriverPath = botSet.get("SeleniumDriverPath").toString();
         BOT_SET.SeleniumDriverName = botSet.get("SeleniumDriverName").toString();

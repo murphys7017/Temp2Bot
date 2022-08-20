@@ -1,5 +1,5 @@
 {
-    "troopMemberNumSeq": 391,
+    "troopMemberNumSeq": 393,
     "list": [
         {
             "uin": 25702204,
@@ -128,7 +128,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1653220789,
-            "lastSpeakTimestamp": 1660822816,
+            "lastSpeakTimestamp": 1660924864,
             "isOfficialBot": false
         },
         {
@@ -219,20 +219,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1646728937,
-            "lastSpeakTimestamp": 1660558297,
-            "isOfficialBot": false
-        },
-        {
-            "uin": 893417992,
-            "nick": "≯慎独、",
-            "permission": "MEMBER",
-            "remark": "≯慎独、",
-            "nameCard": "",
-            "specialTitle": "",
-            "muteTimestamp": 0,
-            "anonymousId": null,
-            "joinTimestamp": 1652686988,
-            "lastSpeakTimestamp": 1652686988,
+            "lastSpeakTimestamp": 1660884612,
             "isOfficialBot": false
         },
         {
@@ -271,7 +258,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1652800247,
-            "lastSpeakTimestamp": 1660822289,
+            "lastSpeakTimestamp": 1660834139,
             "isOfficialBot": false
         },
         {
@@ -289,9 +276,9 @@
         },
         {
             "uin": 1095851642,
-            "nick": "小贤有个梦ʚɞ",
+            "nick": "看漫天星辰࿐",
             "permission": "MEMBER",
-            "remark": "小贤有个梦ʚɞ",
+            "remark": "看漫天星辰࿐",
             "nameCard": "",
             "specialTitle": "",
             "muteTimestamp": 0,
@@ -310,7 +297,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1651943332,
-            "lastSpeakTimestamp": 1660822815,
+            "lastSpeakTimestamp": 1660889064,
             "isOfficialBot": false
         },
         {
@@ -336,7 +323,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1653518569,
-            "lastSpeakTimestamp": 1660792379,
+            "lastSpeakTimestamp": 1660924868,
             "isOfficialBot": false
         },
         {
@@ -362,7 +349,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1652690901,
-            "lastSpeakTimestamp": 1660381934,
+            "lastSpeakTimestamp": 1660835272,
             "isOfficialBot": false
         },
         {
@@ -544,7 +531,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1653581597,
-            "lastSpeakTimestamp": 1660561739,
+            "lastSpeakTimestamp": 1660889084,
             "isOfficialBot": false
         },
         {
@@ -701,19 +688,6 @@
             "anonymousId": null,
             "joinTimestamp": 1653731130,
             "lastSpeakTimestamp": 1659680270,
-            "isOfficialBot": false
-        },
-        {
-            "uin": 1785769010,
-            "nick": "۞円闎 ⃒⃘⃤",
-            "permission": "MEMBER",
-            "remark": "۞円闎 ⃒⃘⃤",
-            "nameCard": "",
-            "specialTitle": "",
-            "muteTimestamp": 0,
-            "anonymousId": null,
-            "joinTimestamp": 1654256230,
-            "lastSpeakTimestamp": 1654606672,
             "isOfficialBot": false
         },
         {
@@ -947,7 +921,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1658841985,
-            "lastSpeakTimestamp": 1659898838,
+            "lastSpeakTimestamp": 1660962334,
             "isOfficialBot": false
         },
         {
@@ -1077,7 +1051,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1646728938,
-            "lastSpeakTimestamp": 1659792192,
+            "lastSpeakTimestamp": 1660834546,
             "isOfficialBot": false
         },
         {
@@ -1186,9 +1160,9 @@
         },
         {
             "uin": 2936527940,
-            "nick": "Smile at life.",
+            "nick": "烟起于长安",
             "permission": "MEMBER",
-            "remark": "Smile at life.",
+            "remark": "烟起于长安",
             "nameCard": "",
             "specialTitle": "",
             "muteTimestamp": 0,
@@ -1285,7 +1259,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1654339070,
-            "lastSpeakTimestamp": 1660822817,
+            "lastSpeakTimestamp": 1660924882,
             "isOfficialBot": false
         },
         {
@@ -1324,7 +1298,7 @@
             "muteTimestamp": 1653568108,
             "anonymousId": null,
             "joinTimestamp": 1653047433,
-            "lastSpeakTimestamp": 1660817162,
+            "lastSpeakTimestamp": 1660887440,
             "isOfficialBot": false
         },
         {
@@ -1480,14 +1454,14 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1654767037,
-            "lastSpeakTimestamp": 1660290937,
+            "lastSpeakTimestamp": 1660882421,
             "isOfficialBot": false
         },
         {
             "uin": 3499999618,
-            "nick": "ㅤㅤㅤㅤㅤㅤ",
+            "nick": "[%ĀĀ\u0007Ð]阿巴ㅤㅤㅤㅤㅤㅤ",
             "permission": "MEMBER",
-            "remark": "ㅤㅤㅤㅤㅤㅤ",
+            "remark": "[%ĀĀ\u0007Ð]阿巴ㅤㅤㅤㅤㅤㅤ",
             "nameCard": "",
             "specialTitle": "",
             "muteTimestamp": 0,

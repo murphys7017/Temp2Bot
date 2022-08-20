@@ -23,7 +23,7 @@ import java.util.Map;
  */
 public class WeatherService {
     private String API_KEY = "";
-    private List<String> AttentionLocation = null;
+    public Map<String, Object> configurations = null;
 
     /**
      * init
@@ -34,8 +34,8 @@ public class WeatherService {
         String path = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
         Yaml yaml = new Yaml();
         Map<String, Object> objectMap = yaml.load(FileUtils.openInputStream(new File(path.replace(".jar",".yml"))));
+        configurations = objectMap;
         API_KEY = objectMap.get("KEY").toString();
-        AttentionLocation = (List<String>) objectMap.get("AttentionLocation");
     }
 
     /**
@@ -80,12 +80,9 @@ public class WeatherService {
      * @throws IOException
      */
     public RealTimeWeather realTimeWeather(String location) throws IOException {
-        location = java.net.URLEncoder.encode(location, StandardCharsets.UTF_8);
         Map<String, String> params = new HashMap<>();
         params.put("key",API_KEY);
-        params.put("location",location);
-        String cityCode = getLocation(params).get(0).getId();
-        params.put("location",cityCode);
+        params.put("location",getLocation(location).get(0).getId());
         String url = ApiEnum.REAL_TIME_WEATHER_API.getPath(params);
         JSONObject jsonObject = HttpUtil.sendGet(url);
         if (jsonObject.get("code").toString().equals("200")){
@@ -107,12 +104,9 @@ public class WeatherService {
      * @throws IOException
      */
     public List<DailyWeather> dailyWeathers(String location,int threeOrSeven) throws IOException {
-        location = java.net.URLEncoder.encode(location, StandardCharsets.UTF_8);
         Map<String, String> params = new HashMap<>();
         params.put("key",API_KEY);
-        params.put("location",location);
-        String cityCode = getLocation(params).get(0).getId();
-        params.put("location",cityCode);
+        params.put("location",getLocation(location).get(0).getId());
         String url = null;
         if (threeOrSeven == 3){
             url = ApiEnum.THREE_DAYS_WEATHER_API.getPath(params);
@@ -135,40 +129,30 @@ public class WeatherService {
 
     /**
      * 获取当前地区预警信息
-     * @param loactions
      * @return
      */
-    public List<WeatherWarining> weatherWarinings() {
-        List<String> cityCodes = new ArrayList<>();
+    public List<WeatherWarining> weatherWarinings(String location) {
         Map<String, String> params = new HashMap<>();
         params.put("key", API_KEY);
-        AttentionLocation.forEach(location -> {
-            location = java.net.URLEncoder.encode(location, StandardCharsets.UTF_8);
-            params.put("location", location);
-            try {
-                cityCodes.add(getLocation(params).get(0).getId());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
-
-        List<WeatherWarining> weatherWariningList = new ArrayList<>();
-        for (String city : cityCodes) {
-            params.put("location", city);
-            try {
-                String url = ApiEnum.WEATHER_DIDASTER_WARNING_API.getPath(params);
-                JSONObject jsonObject = HttpUtil.sendGet(url);
-                if (jsonObject.get("code").toString().equals("200")) {
-                    JSONArray jsonArray = jsonObject.getJSONArray("warning");
-                    weatherWariningList = jsonArray.toJavaList(WeatherWarining.class);
-                } else {
-                    return null;
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-
+        try {
+            params.put("location", getLocation(location).get(0).getId());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+        List<WeatherWarining> weatherWariningList = new ArrayList<>();
+        try {
+            String url = ApiEnum.WEATHER_DIDASTER_WARNING_API.getPath(params);
+            JSONObject jsonObject = HttpUtil.sendGet(url);
+            if (jsonObject.get("code").toString().equals("200")) {
+                JSONArray jsonArray = jsonObject.getJSONArray("warning");
+                weatherWariningList = jsonArray.toJavaList(WeatherWarining.class);
+            } else {
+                return null;
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         return weatherWariningList;
     }
 }

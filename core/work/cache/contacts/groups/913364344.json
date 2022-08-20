@@ -1,5 +1,5 @@
 {
-    "troopMemberNumSeq": 132,
+    "troopMemberNumSeq": 133,
     "list": [
         {
             "uin": 207343950,
@@ -193,7 +193,7 @@
             "muteTimestamp": 0,
             "anonymousId": null,
             "joinTimestamp": 1655992066,
-            "lastSpeakTimestamp": 1660645312,
+            "lastSpeakTimestamp": 1660868228,
             "isOfficialBot": false
         },
         {
@@ -272,19 +272,6 @@
             "anonymousId": null,
             "joinTimestamp": 1655992066,
             "lastSpeakTimestamp": 1660496632,
-            "isOfficialBot": false
-        },
-        {
-            "uin": 3292317424,
-            "nick": "帅炸了",
-            "permission": "MEMBER",
-            "remark": "帅炸了",
-            "nameCard": "",
-            "specialTitle": "",
-            "muteTimestamp": 0,
-            "anonymousId": null,
-            "joinTimestamp": 1655992066,
-            "lastSpeakTimestamp": 1659228607,
             "isOfficialBot": false
         },
         {

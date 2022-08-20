@@ -3,4 +3,10 @@
 # 请注册和风天气 获取ID key
 ID: HE2208081753111840
 KEY: 4fd5b28a9a27428e92dd14cada996806
-AttentionLocation: ['石家庄','保定']
+
+AttentionUser:
+  815049548: ['石家庄','保定']
+
+AttentionGroup:
+  494799293: ['石家庄']
+  817581299: ['石家庄','保定','北京']

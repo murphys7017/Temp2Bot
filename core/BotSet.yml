@@ -4,8 +4,8 @@
 QQ: 2762018040
 # 密码
 Password: 0.0WenShiYue
-# 对那些群生效
-ApplyGroups: [817581299,494799293,729445824,817581299]
+# 对那些群生效  494799293
+ApplyGroups: [817581299,729445824,817581299]
 # 可以通过那个qq进行管理 部分可用还没写完
 Admin: 815049548
 # 登录协议 ANDROID_PHONE | ANDROID_PAD | ANDROID_WATCH
@@ -26,10 +26,7 @@ RecallIn: 10
 
 #是否启用敏感词封禁 0 撤回  n 大于0 封禁n秒   n<0 撤回加封禁n秒
 SensitiveWordsBanned: 5
-# ban禁词
-BanWordFilePath: work\TalkData\BanWords.txt
-# 固定回复路径
-SpecificReplyFilePath: work\TalkData\SpecificReply.txt
+
 
 # Selenium驱动路径
 SeleniumDriverPath: C:\Program Files (x86)\Microsoft\Edge\Application\msedgedriver.exe

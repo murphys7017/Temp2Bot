@@ -21,10 +21,11 @@ public enum ApiEnum {
     }
 
     public String getPath(Map<String,String> params) throws UnsupportedEncodingException {
+        StringBuilder res = new StringBuilder();
+        res.append(this.apiUrl);
         for (String s : params.keySet()) {
-            this.apiUrl = this.apiUrl+s+"="+params.get(s).toString()+"&";
+            res.append(s).append("=").append(params.get(s)).append("&");
         }
-
-        return this.apiUrl;
+        return res.toString();
     }
 }
