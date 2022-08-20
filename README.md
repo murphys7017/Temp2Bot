@@ -87,3 +87,12 @@ yml 读取完数字自动转换成了integer强转也不行,麻了
 
 为的实验爬取网易云信息把我自己的账户搞的有风险没法登录了,tnnd
 
+
+
+#### 8月21日 2:05  初次打包发布
+
+坑爹csdn
+
+依赖本地jar包,打包没打进去,csdn一查,配置半天,一看,还是没打进去
+
+结果加一句<includeSystemScope>true</includeSystemScope>就行

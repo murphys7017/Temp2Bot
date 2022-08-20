@@ -1,22 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b76e190-4d01-4a01-9162-e479260b3fe9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/polaris/plugin/GetMusicData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/polaris/plugin/MusicInfoPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/WeatherReminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../core/work/usingFile/ghs/1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/Config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/Config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/ApiEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/ApiEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/GetWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/GetWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/pojo/WeatherWarining.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/src/main/java/xyz/polaris/plugin/pojo/WeatherWarining.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/WeatherPlguin-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/WeatherPlguin-1.0.0.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/target/WeatherPlguin-1.0.0.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/ApiEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/ApiEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/GetWeather.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/GetWeather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/WeatherService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/pojo/WeatherWarining.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/target/classes/xyz/polaris/plugin/pojo/WeatherWarining.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeatherPlguin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../WeatherPlguin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/BotSet.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/BotSet.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/PluginExample/python/PluginSet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/PluginExample/python/PythonExample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/RUN_VARIABLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/RUN_VARIABLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/controller/MessageResponseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/controller/MessageResponseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/function/function包说明.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/function/impl/BaiduTranslateImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/function/impl/DebugTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/function/impl/DebugTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/init/LoadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/init/LoadConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/init/LoadPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/init/LoadPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/init/LoginBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/main/java/polaris/core/init/LoginBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/src/test/java/polaris/core/YmlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/src/test/java/polaris/core/YmlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/cache/account.secrets" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/work/cache/account.secrets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/494799293.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/494799293.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/755093737.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/755093737.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/817581299.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/817581299.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/913364344.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/work/cache/contacts/groups/913364344.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/cache/servers.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/work/cache/servers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/cache/session.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../core/work/cache/session.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/usingFile/ghs/1579876690539.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/usingFile/ghs/1579876699468.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/usingFile/ghs/1579876701174.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/usingFile/ghs/1579876703731.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/usingFile/ghs/1579876707581.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../core/work/usingFile/ghs/1579876713633.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\APP\CodeUse\Maven\maven-repository" />
-        <option name="mavenHome" value="E:/APP/CodeUse/Maven" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../APP/CodeUse/Maven" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="E:\APP\CodeUse\Maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="2D3XVXpgYfvAS8oIBLda2VqRWXF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "jdk.selected.JAVA_MODULE": "14",
+    "last_opened_file_path": "E:/Code/Polaris/Jar/MusicSharePlugin",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33908045",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\Polaris\PlguinTest\src\main\java\xyz\polaris\plugin" />
+      <recent name="E:\Code\Polaris\PlguinTest\src\main\resources" />
+      <recent name="E:\Code\Polaris\PlguinTest\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GetMusicData">
+    <configuration name="GetMusicData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.polaris.plugin.GetMusicData" />
+      <module name="MusicSharePlguin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.polaris.plugin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicSharePlguin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HttpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpTest.getLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicSharePlguin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HttpTest" />
+      <option name="METHOD_NAME" value="getLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpTest.getRealTimeWeather" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicSharePlguin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HttpTest" />
+      <option name="METHOD_NAME" value="getRealTimeWeather" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpTest.loadYmlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicSharePlguin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HttpTest" />
+      <option name="METHOD_NAME" value="loadYmlTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="MusicSharePlguin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="MusicSharePlguin" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GetMusicData" />
+        <item itemvalue="JUnit.HttpTest.getRealTimeWeather" />
+        <item itemvalue="JUnit.HttpTest.getLocation" />
+        <item itemvalue="JUnit.HttpTest.loadYmlTest" />
+        <item itemvalue="JUnit.HttpTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b76e190-4d01-4a01-9162-e479260b3fe9" name="Changes" comment="" />
+      <created>1659928766877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659928766877</updated>
+      <workItem from="1659928768324" duration="6950000" />
+      <workItem from="1659951238017" duration="1739000" />
+      <workItem from="1660033544071" duration="5674000" />
+      <workItem from="1660093912235" duration="7796000" />
+      <workItem from="1660111929617" duration="168000" />
+      <workItem from="1660112114770" duration="325000" />
+      <workItem from="1660112461630" duration="19000" />
+      <workItem from="1660112576815" duration="34000" />
+      <workItem from="1660113011658" duration="22000" />
+      <workItem from="1660114124842" duration="15524000" />
+      <workItem from="1660265771228" duration="5093000" />
+      <workItem from="1660528835071" duration="170000" />
+      <workItem from="1660529088312" duration="107000" />
+      <workItem from="1660529212637" duration="6798000" />
+      <workItem from="1660548031324" duration="1794000" />
+      <workItem from="1660550517952" duration="8522000" />
+      <workItem from="1660834428437" duration="55000" />
+      <workItem from="1660834511747" duration="34000" />
+      <workItem from="1660834966798" duration="363000" />
+      <workItem from="1660983597374" duration="12390000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>
